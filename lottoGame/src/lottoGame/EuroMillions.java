@@ -2,6 +2,13 @@ package lottoGame;
 
 import java.util.ArrayList;
 
+/*
+ *  This is a first attempt at writing a program to test the odds of winning the Euromillions.
+ *  It will generate 5 random winning numbers and 2 random lucky stars for both the game and player.
+ *  It will do this 139,838,160 times.(Odds of winning jackpot)
+ *  It will check each time if all numbers match and print the result at the end.
+ *  There is also a timer to see how long the program took to complete.
+ */
 public class EuroMillions {
 	
 	static ArrayList <Integer> tempNumbers = new ArrayList<>();
