@@ -26,6 +26,7 @@ public class EuroMillions {
 	static int starsMatch2;
 	static int jackpotMatch;
 	
+	//A method to generate the 5 winning numbers randomly.
 	public void generateWinningNumbers() {
 		int x = 1;
 			while(x < 51) {
@@ -59,13 +60,12 @@ public class EuroMillions {
 		}
 		winningNumbers.sort(null);
 		winningStars.sort(null);
-//		System.out.println("Winning Numbers : " +winningNumbers+ " Lucky Stars : " +winningStars);
-//		System.out.println();
 		tempNumbers.clear();
 		tempStars.clear();
 		return;
 	}
 	
+	//A method to generate the 2 lucky stars randomly.
 	public void generateQuickPickNumbers() {
 		int a = 1;
 		while(a < 51) {
@@ -99,11 +99,10 @@ public class EuroMillions {
 		}
 		quickPickNumbers.sort(null);
 		quickPickStars.sort(null);
-//		System.out.println("Your Numbers :    " +quickPickNumbers+ " Your Stars : " +quickPickStars);
-//		System.out.println();
 		return;
 	}
-
+	
+	// A method to generate the result.
 	public void results() {
 
 		int numberMatch = 0;
@@ -144,15 +143,12 @@ public class EuroMillions {
 		starsMatch = 0;
 		
 		
-//		System.out.println("You matched " +numberMatch+ " Numbers and " +starsMatch+ " Lucky Stars.");
-//		System.out.println();
 		tempNumbers.clear();
 		tempStars.clear();
 		winningNumbers.clear();
 		winningStars.clear();
 		quickPickNumbers.clear();
 		quickPickStars.clear();
-		//return;
 	}
 	
 	public void statistics() {
@@ -175,6 +171,7 @@ public class EuroMillions {
 		
 	}
 	
+	// Run the game and time how long execution takes.
 	public static void main(String[] args) {
 		
 		long startTime = System.currentTimeMillis();
